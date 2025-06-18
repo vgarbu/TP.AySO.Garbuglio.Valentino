@@ -1,0 +1,81 @@
+    1  sudo fdisk - l
+    2  sudo fdisk -l
+    3  exit
+    4  sudo swapon /dev/sdb1
+    5  sudo swapon /dev/sdb3
+    6  free -h
+    7  swapon -s
+    8  sudo mkswap /dev/sdd1
+    9  sudo mkswap /dev/sdb1
+   10  sudo mkswap /dev/sdb3
+   11  free
+   12  ls -l
+   13  ls -lh
+   14  /dev/sdb1
+   15  sudo fdisk -l
+   16  sudo mkswap /dev/sdd1
+   17  sudo fdisk /dev/sdd1
+   18  swapon -s
+   19  sudo swapon /dev/sdd1
+   20  sudo mkswap /dev/sdd
+   21  free -h
+   22  sudo swapon /dev/sdd
+   23  free -h
+   24  swapon -s
+   25  sudo swapoff -a
+   26  free -h
+   27  sudo fdisk /dev/sdd
+   28  free
+   29  free - h
+   30  free -h
+   31  sudo mkswap /dev/sdd1
+   32  free -k
+   33  free -h
+   34  sudo swapon /dev/sdd1
+   35  free -h
+   36  swapon -s
+   37  cat /proc/swaps
+   38  sudo fdisk /dev/sdc
+   39  sudo wipefs -a /dev/sdc1
+   40  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   41  sudo pvs
+   42  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   43  sudo pvs
+   44  sudo vgcreate vg_web /dev/sdc2
+   45  sudo  pvs
+   46  sudo lvcreate -L 1G vg_web -n lv_web1
+   47  sudo pvs
+   48  sudo lvcreate -L 1G vg_web -n lv_web2
+   49  sudo lvcreate -L 1G vg_web -n lv_web3
+   50  sudo lvcreate -L 512M vg_web -n lv_web3
+   51  sudo umount /dev/vg_web/lv_web2
+   52  sudo lvcreate -L 512M vg_web -n lv_web2
+   53  sudo lvs
+   54  sudo lvreduce -L 512M /dev/vg_web/lv_web2
+   55  lvs
+   56  sudo lvs
+   57  sudo lvreduce -L 512M /dev/vg_web/lv_web3
+   58  sudo lvs
+   59  sudo pvs
+   60  sudo fdisk -l
+   61  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   62  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   63  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   64  sudo isblk -f
+   65  exit
+   66  ls -l
+   67  free
+   68  ls
+   69  exit
+   70  free -h
+   71  exit
+   72  ls -l
+   73  cd carpeta_compartida
+   74  ls -l
+   75  cd ..
+   76  exit
+   77  sudo fdisk -l
+   78  ls -l
+   79  mkdir
+   80  mkdir Historial_Comandos_Garbuglio
+   81  history > Historial_Comandos_Garbuglio/historial.txt
